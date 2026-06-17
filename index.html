@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Orbit Breaker VR</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div id="hud" class="hud">
+      <div class="hud__brand">
+        <span class="hud__dot"></span>
+        <span>Orbit Breaker</span>
+      </div>
+      <div class="hud__stats">
+        <span id="score">0</span>
+        <span id="timer">60</span>
+        <span id="state">Desktop</span>
+      </div>
+    </div>
+
+    <main id="overlay" class="overlay">
+      <section class="panel">
+        <p class="eyebrow">WebXR arcade</p>
+        <h1>Orbit Breaker</h1>
+        <p class="lede">
+          Step into a neon arena, aim with your gaze or VR controller, and crack as many orbiting cores as you can before the timer drains.
+        </p>
+        <div class="actions">
+          <button id="playDesktop" class="primary" type="button">Play on screen</button>
+          <button id="enterVr" class="secondary" type="button">Enter VR</button>
+        </div>
+        <p id="xrMessage" class="message">WebXR needs a secure browser context. Localhost works.</p>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
